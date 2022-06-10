@@ -1,0 +1,23 @@
+{
+    "versions": {
+        "0.0": {
+            "feature": [
+                "Tmux setup"
+            ],
+            "development version": {
+                "beta": {
+                    "0.0.b.0": [
+                        "[Tmux setup]"
+                    ]
+                }
+            }
+        }
+    },
+    "features": {
+        "future": {},
+        "present": {
+            "Tmux setup": "0.0 -> now"
+        },
+        "past": {}
+    }
+}
