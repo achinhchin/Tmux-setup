@@ -2,6 +2,8 @@
 Tmux is window management for terminal that increase more productivity for me and this is my setup.
 
 ### **Image Preview**
+- Screenshots
+![Screenshot](./readme-assets/screenshot.png)
 
 ### **Go to**
 - [Version record](./version-record.json)
