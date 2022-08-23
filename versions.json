@@ -4,7 +4,7 @@
             "features": [
                 "Tmux setup"
             ],
-            "release": false,
+            "release": true,
             "updates": [
                 "init"
             ],
