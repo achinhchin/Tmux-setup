@@ -5,14 +5,13 @@ Tmux is window management for terminal that increase more productivity for me an
 - Screenshots
 ![Screenshot](./readme-assets/screenshot.png)
 
-### **Go to**
-- [Version record](./version-record.json)
+### **See**
+- [Versions](./versions.json)
 
 ### **Credits**
 - Inspiration, list of modules and solution from [craftzdog/dotfiles-public](https://github.com/craftzdog/dotfiles-public).
 
 ### **OS support**
-- Windows 10, 11 (WSL)
 - macOS
 - linux
 
@@ -31,18 +30,28 @@ Tmux is window management for terminal that increase more productivity for me an
 ---
 
 ## **1. Install Tmux**
-Type ```brew install terminal``` to your terminal to install Tmux.
+Type ```brew install tmux``` to your terminal to install Tmux.
 
 > **Important**
 >
 > Make sure that you've already install Brew to your terminal.
 
 ## **2. Add Tmux config files**
-Copy all files in [home](./home/) directory to your ```~``` directory.
+Type these command terminal to auto add tmux folder to *~/.config*.
+```
+# Check if ~/.config directory is exist.
+cd ~
+if not test -d ~/.config ; mkdir .config ; end
 
-> **Alias**
->
-> You can add alias to incerase your productivity in my [Fish Shell setup](https://github.com/chinhchin/Fish-Shell-setup.git).
+# Check if ~/Donwloads folder exists.
+if not test -d ~/Downloads ; mkdir ~/Downloads ; end
+
+# Clone repository
+git clone https://github.com/chinhchin/Tmux-setup.git ~/Downloads/Tmux-setup
+
+# Copy folder
+cp -r ~/Downloads/Tmux-setup/tmux/ ~/.config/tmux/
+```
 
 ## **3. Useful features**
 ### **Source of shortcuts**
@@ -55,17 +64,3 @@ You can see many shortcuts in ```~/.tmux.conf``` file after install with my solu
 - **tmat** - ```tmux attach-session -t```
 - **tmls** - ```tm ls```
 
-### **3.2 Basic shortcuts**
-**Change of prefix key.**
-- **\<C-t\>** - (I change prefix key from ```<C-b>``` to ```<C-t>```)
-
-**These shortcut can be used any time**
-- **C-S-Left** - move window to left
-- **C-S-Right** - move window to right
-
-**These shortcut can be used after start prefix key.**
-- **r** - reaload
-- **k** - move pane focus to up
-- **j** - move pane focus to down
-- **h** - move pane focus to left
-- **l** - move pane focus to right
